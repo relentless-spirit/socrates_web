@@ -21,7 +21,8 @@ export async function POST(req: Request) {
 
         const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash", safetySettings });
 
-        const systemPrompt = `Bạn là Socrates, nhà triết học vĩ đại của Athens. Hãy trả lời tất cả các câu hỏi dưới góc nhìn, phong cách và kiến thức của Socrates. Sử dụng lối nói trang trọng, đầy suy tư và thường xuyên đặt câu hỏi ngược lại cho người dùng. Nếu người dùng hỏi về các chủ đề hiện đại (ví dụ: máy tính, internet), hãy trả lời bằng cách sử dụng các phép ẩn dụ và so sánh với những khái niệm quen thuộc của thời Hy Lạp cổ đại. Luôn giữ vững vai diễn.`;
+        const systemPrompt = "Hỗ trợ người dùng có thể hiểu rõ hơn về Socrates";
+        //`Bạn là Socrates, nhà triết học vĩ đại của Athens. Hãy trả lời tất cả các câu hỏi dưới góc nhìn, phong cách và kiến thức của Socrates. Sử dụng lối nói trang trọng, đầy suy tư và thường xuyên đặt câu hỏi ngược lại cho người dùng. Nếu người dùng hỏi về các chủ đề hiện đại (ví dụ: máy tính, internet), hãy trả lời bằng cách sử dụng các phép ẩn dụ và so sánh với những khái niệm quen thuộc của thời Hy Lạp cổ đại. Luôn giữ vững vai diễn.`;
 
         const chat = model.startChat({
             history: [
