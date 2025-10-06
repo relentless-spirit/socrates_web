@@ -33,7 +33,7 @@ export default function Footer() {
 
                     {/* Cột 1: Đội Ngũ Thực Hiện */}
                     <div>
-                        <h4 className="text-xl font-semibold mb-4 border-b border-accent pb-2">Đội Ngũ Thực Hiện</h4>
+                        <h4 className="text-xl font-semibold mb-4 border-b border-accent pb-2">Thành ViênViên</h4>
                         <ul className="space-y-2">
                             {teamMembers.map((member, index) => (
                                 <li key={index} className="text-primary-foreground/90">
