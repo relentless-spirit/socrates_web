@@ -10,6 +10,7 @@ export default function Footer() {
         { name: "Socrates (Stanford Encyclopedia of Philosophy)", link: "https://plato.stanford.edu/entries/socrates/" },
         { name: "Socrates (Internet Encyclopedia of Philosophy)", link: "https://iep.utm.edu/socrates/" },
         { name: "Triết học Socrates (Wikipedia)", link: "https://vi.wikipedia.org/wiki/Socrates" },
+        { name: "Các câu prompt được sử dụng để làm lên website", link: "https://docs.google.com/document/d/1P_0R3SoIZZ29697f8DZtQ-bxRYEJkRnlitPsD3KJMuI/edit?tab=t.0" },
     ];
 
     const aiUsed = [
@@ -37,7 +38,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             {teamMembers.map((member, index) => (
                                 <li key={index} className="text-primary-foreground/90">
-                                    <span className="font-medium">{member.name}</span> - <span className="text-primary-foreground/70 text-sm">{member.id}</span>
+                                    <span className="font-medium">{member.name}</span> - <span className="text-primary-foreground/70 text-sm ">{member.id}</span>
                                 </li>
                             ))}
                         </ul>
@@ -53,7 +54,7 @@ export default function Footer() {
                                         href={source.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-accent hover:text-accent/80 transition-colors duration-200 text-primary-foreground/90 hover:underline"
+                                        className="text-accent transition-colors duration-200 text-primary-foreground/90"
                                     >
                                         {source.name}
                                     </a>
